@@ -17,8 +17,8 @@ pipeline {
 	stage ('Deploy') {
 		steps {
 			sh '''
-             cp -r $WORKSPACE/dist/matrimony /opt/apache-tomcat-9.0.36/webapps
-             curl -u admin:admin http://52.14.19.158:8888/manager/reload?path=/matrimony
+             cp -r $WORKSPACE/dist/matrimony /webapps
+             curl -u admin:admin http://3.16.152.195:8083/manager/reload?path=/matrimony
              '''
 		}
 	}
