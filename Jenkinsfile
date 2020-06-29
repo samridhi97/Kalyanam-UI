@@ -19,7 +19,7 @@ pipeline {
 			sh '''
              cp -r $WORKSPACE/dist/matrimony /webapps
              
-             curl -u admin:admin http://3.16.152.195:8083/manager/reload?path=/matrimony
+             curl -u admin:admin http://3.16.152.195:8085/manager/reload?path=/matrimony
              '''
 		}
 	}
